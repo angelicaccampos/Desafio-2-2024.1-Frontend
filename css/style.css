@@ -1,0 +1,277 @@
+body {
+    font-family: 'Montserrat', Arial;
+    color: #FFFFFF;
+    background-color: #FF731A;
+}
+
+header {
+    font-size: 12px;
+}
+
+main {
+    max-width: 1200px;
+}
+
+.boxmenu {
+    padding: 5px 10px;
+    width: 1120px;
+    height: 70px;
+    margin-left: 43px;
+    margin-top: 40px;
+    border: 2px solid #FFFFFF;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav ul {
+    margin-top: 10px;
+    margin-left: 100px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav p {
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+nav img {
+    margin-left: 1070px;
+    margin-top: -60px;
+    display: flex;
+}
+
+nav span {
+    opacity: 60%;
+}
+
+.logoEngnet {
+    padding: 2px 2px;
+    width: 75px;
+    height: 75px;
+    top: 45px;
+    left: 55px;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+}
+
+aside {
+    text-align: center;
+    width: 70px;
+    height: 630px;
+    border: 2px solid #FFFFFF;
+    top: 40px;
+    position: absolute;
+    padding: 5px 5px;
+    margin-left: 43px;
+}
+
+.boxMenuLateral {
+    padding: 10px;
+    margin-top: 480px;
+}
+
+main {
+    margin-left: 115px;
+    margin-right: 500px;
+    padding: 110px 70px 40px 80px;
+}
+
+main h1 {
+    font-size: 42px;
+}
+
+main p {
+    font-size: 12px;
+}
+
+.fotoEquipe {
+    padding: 175px 0px 0px 490px;
+    width: 485px;
+    height: 335px;
+    top: 105px;
+    position: absolute;
+}
+
+.logo {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    left: 1306px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    body {
+        flex-direction: row;
+    }
+
+    .boxmenu,
+    .main {
+        width: 90%;
+        left: 150px;
+        margin-right: auto;
+    }
+
+    nav ul {
+        margin-left: 50px;
+        gap: 20px;
+    }
+
+    nav p {
+        margin-left: 200px;
+    }
+
+    nav img {
+        margin-left: auto;
+    }
+
+    .logoEngnet {
+        left: 50px;
+    }
+
+    aside {
+        width: 60px;
+        height: 950px;
+        margin-left: 43px;
+    }
+
+    main {
+        margin-left: 100px;
+        margin-right: 20px;
+        padding: 90px 40px;
+    }
+
+    main h1 {
+        font-size: 42px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    .fotoEquipe {
+        padding: 0px 0px 0px 0px;
+        position: absolute;
+        width: 580px;
+        height: 400px;
+        top: auto;
+        margin-left: auto;
+    }
+
+    .logo {
+        left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        margin-left: 50px;
+        gap: 20px;
+    }
+
+    nav p {
+        margin-left: 120px;
+    }
+
+    nav img {
+        margin-left: auto;
+    }
+
+    aside {
+        width: 60px;
+        height: 950px;
+        margin-left: 43px;
+    }
+
+    main {
+        margin-left: 100px;
+        margin-right: 20px;
+        padding: 10px 40px;
+    }
+
+    .fotoEquipe {
+        padding: 20px 0px 0px 0px;
+        width: 90%;
+        height: auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .boxmenu {
+        width: 850px;
+        height: 450px;
+    }
+
+    .logoEngnet {
+        width: 90px;
+        height: 90px;
+        top: 200px;
+
+    }
+
+    nav ul {
+        margin-left: 90px;
+        margin-bottom: 15px;
+        font-size: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav p {
+        position: absolute;
+        margin-top: 370px;
+        margin-left: 0px;
+    }
+
+    nav img {
+        position: relative;
+        margin-top: -80px;
+        margin-left: 500px;
+    }
+
+    aside {
+        width: 80px;
+        height: 1950px;
+        margin-left: 43px;
+    }
+
+    main {
+        margin-left: 100px;
+        margin-right: 20px;
+        padding: 50px 90px;
+    }
+
+    main h1 {
+        font-size: 72px;
+    }
+
+    main p {
+        font-size: 40px;
+    }
+
+    .fotoEquipe {
+        padding: 10px 10px 0px 0px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .boxMenuLateral {
+        margin-top: 1000px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+}
