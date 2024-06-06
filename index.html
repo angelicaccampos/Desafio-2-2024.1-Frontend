@@ -3,45 +3,52 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="utf-8">
+
     <title> EngNet Consultoria </title>
+
     <link rel="stylesheet" href="css\normalize.css">
     <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script src="js\index.js" defer></script>
+
+
+</head>
 </head>
 
 <body>
     <header>
         <div class="boxmenu">
             <div>
-                <img src="imagens\engnet logo.png" class="logoEngnet">
+                <button id="home" onclick="showHome()"></button><img src="imagens\engnet logo.png" class="logoEngnet">
+                
             </div>
 
             <nav>
                 <ul>
                     <li>
                         <span>01</span></br>
-                        <a target="_blank" href="" draggable="true">Serviços </a>
+                        <button onclick="showServico()">Serviços</button>
                     </li>
 
                     <li>
                         <span>02</span></br>
-                        <a target="_blank" href="mailto:angelicadacostacampos@gmail.com" draggable="true">Sobre nós</a>
+                        <button o>Sobre nós</button>
                     </li>
 
                     <li>
                         <span>03</span></br>
-                        <a target="_blank" href="mailto:angelicadacostacampos@gmail.com" draggable="true"> Processo
-                            Seletivo</a>
+                        <button> Processo Seletivo</button>
                     </li>
 
                     </br>
                     <p>Fale com a gente</p>
                     <a target="_blank" href="mailto:angelicadacostacampos@gmail.com" draggable="true">
+                        <img id="envelopeLogo" src="imagens\email logo.png" alt="Envelope" class="logo"></a>
                 </ul>
-                <img src="imagens\email logo.png" alt="Envelope" class="logo"></a>
             </nav>
     </header>
 

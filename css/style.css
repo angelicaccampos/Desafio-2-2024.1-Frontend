@@ -4,12 +4,24 @@ body {
     background-color: #FF731A;
 }
 
-header {
-    font-size: 12px;
-}
-
 main {
     max-width: 1200px;
+}
+
+header {
+    font-size: 12px;
+    position: relative;
+}
+
+#home{
+    z-index: 1;
+    position: absolute;
+    border: solid 1px #fff;
+    width: 80px;
+    height: 83px;
+    background-color: transparent;
+    left: 45px;
+    top: 0px;
 }
 
 .boxmenu {
@@ -21,33 +33,40 @@ main {
     border: 2px solid #FFFFFF;
 }
 
-nav a {
-    text-decoration: none;
+nav {
+    font-size: 15px;
+}
+
+nav button {
+    display: flex;
+    justify-content: start;
+    width: 150px;
     color: #FFFFFF;
-    text-align: center;
+    border: solid #FF731A;
+    background-color: #FF731A;
 }
 
 nav ul {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 100px;
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 nav p {
-    margin-top: 30px;
-    margin-left: 400px;
+    margin-top: 10px;
+    margin-left: 100px;
 }
 
-nav img {
-    margin-left: 1070px;
-    margin-top: -60px;
-    display: flex;
+#envelopeLogo {
+    margin-left: 50px;
+    margin-top: -10px;
 }
 
 nav span {
+    margin-left: 10px;
     opacity: 60%;
 }
 
@@ -55,8 +74,8 @@ nav span {
     padding: 2px 2px;
     width: 75px;
     height: 75px;
-    top: 45px;
-    left: 55px;
+    top: 5px;
+    left: 40px;
     object-fit: cover;
     object-position: left;
     position: absolute;
@@ -79,9 +98,10 @@ aside {
 }
 
 main {
-    margin-left: 115px;
-    margin-right: 500px;
-    padding: 110px 70px 40px 80px;
+    margin-top: 100px;
+    margin-left: 180px;
+    margin-right: 550px;
+    padding: 10px 10px 0px 10px;
 }
 
 main h1 {
@@ -89,64 +109,74 @@ main h1 {
 }
 
 main p {
-    font-size: 12px;
+    font-size: 18px;
+    padding: 0px 9px 0px 10px;
+
 }
 
 .fotoEquipe {
-    padding: 175px 0px 0px 490px;
+    padding: 10px 10px 10px 10px;
     width: 485px;
     height: 335px;
-    top: 105px;
-    position: absolute;
+    margin-top: -300px;
+    margin-left: 500px;
 }
 
 .logo {
     padding: 5px;
     width: 30px;
     height: 30px;
-    left: 1306px;
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-    body {
-        flex-direction: row;
+@media (max-width: 1024px) {
+    .boxmenu {
+        width: 90%;
+        height: 100%;
     }
 
-    .boxmenu,
-    .main {
-        width: 90%;
-        left: 150px;
-        margin-right: auto;
+    nav {
+        font-size: 30px;
     }
 
     nav ul {
-        margin-left: 50px;
-        gap: 20px;
+        display: grid;
+        margin-left: 10%;
+        gap: 6%;
     }
 
     nav p {
-        margin-left: 200px;
+        margin-bottom: 8%;
+        margin-left: 01%;
+        margin-top: -3%;
+    }
+
+    nav button {
+        display: flex;
+        justify-content: start;
+        width: 280px;
     }
 
     nav img {
-        margin-left: auto;
+        position: absolute;
+        left: 80%;
+        top: 85%;
     }
 
     .logoEngnet {
-        left: 50px;
+        top: 20%;
+        left: 05%;
     }
 
     aside {
-        width: 60px;
-        height: 950px;
-        margin-left: 43px;
+        width: 8%;
+        height: 90%;
     }
 
     main {
-        margin-left: 100px;
-        margin-right: 20px;
-        padding: 90px 40px;
+        margin-left: 19%;
+        padding: 10px 10px 10px 10px;
+        margin-right: 5%;
     }
 
     main h1 {
@@ -154,124 +184,158 @@ main p {
     }
 
     main p {
-        font-size: 20px;
+        font-size: 30px;    
     }
 
     .fotoEquipe {
-        padding: 0px 0px 0px 0px;
-        position: absolute;
-        width: 580px;
-        height: 400px;
-        top: auto;
+        position: relative;
+        width: 80%;
+        height: 00%;
+        margin-top: 5%;
         margin-left: auto;
     }
 
     .logo {
-        left: auto;
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #home{
+        z-index: 1;
+        position: absolute;
+        border: solid 1px #fff;
+        width: 9%;
+        height: 100%;
+        background-color: transparent;
+        left: 45px;
+        top: 0px;
     }
 }
 
 @media (max-width: 768px) {
+    .boxmenu {
+        width: 90%;
+        height: 100%;
+    }
+
     nav ul {
-        margin-left: 50px;
+        margin-left: 10%;
         gap: 20px;
     }
 
     nav p {
-        margin-left: 120px;
+        margin-left: 10px;
     }
 
     nav img {
-        margin-left: auto;
+        top: 70%;
+        margin-left: 0%;
     }
 
     aside {
-        width: 60px;
-        height: 950px;
-        margin-left: 43px;
-    }
-
-    main {
-        margin-left: 100px;
-        margin-right: 20px;
-        padding: 10px 40px;
+        width: 8%;
+        height: 150%;
     }
 
     .fotoEquipe {
-        padding: 20px 0px 0px 0px;
-        width: 90%;
-        height: auto;
         position: relative;
+        width: 80%;
+        height: 00%;
+        margin-top: 5%;
+        margin-left: auto;
     }
+
+    #home{
+        z-index: 1;
+        position: absolute;
+        border: solid 1px #fff;
+        width: 9.2%;
+        height: 100%;
+        background-color: transparent;
+        left: 45px;
+        top: 0px;
+    }
+
+    .logo {
+        padding: 2px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .boxMenuLateral {
+        margin-top: 1200%;
+    }
+
 }
 
 @media (max-width: 480px) {
-
     .boxmenu {
-        width: 850px;
-        height: 450px;
-    }
-
-    .logoEngnet {
-        width: 90px;
-        height: 90px;
-        top: 200px;
-
+        width: 90%;
+        height: 100%;
     }
 
     nav ul {
-        margin-left: 90px;
-        margin-bottom: 15px;
-        font-size: 40px;
+        display: block;
         flex-direction: column;
-        align-items: flex-start;
+        margin-left: 10%;
+        font-size: 38px;
     }
 
-    nav p {
-        position: absolute;
-        margin-top: 370px;
-        margin-left: 0px;
+    nav ul li {
+        margin-bottom: 2%;
     }
 
     nav img {
-        position: relative;
-        margin-top: -80px;
-        margin-left: 500px;
+        position: absolute;
+        top: 82%;
+        left: 50%;
+    }
+
+    nav button{
+        width: 390px;
     }
 
     aside {
-        width: 80px;
-        height: 1950px;
+        width: 8%;
+        height: 100%;
         margin-left: 43px;
     }
 
-    main {
-        margin-left: 100px;
-        margin-right: 20px;
-        padding: 50px 90px;
+    .boxMenuLateral {
+        margin-top: 1000%;
     }
 
     main h1 {
-        font-size: 72px;
+        font-size: 50px;
     }
 
     main p {
         font-size: 40px;
     }
 
-    .fotoEquipe {
-        padding: 10px 10px 0px 0px;
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .boxMenuLateral {
-        margin-top: 1000px;
-    }
-
     .logo {
-        width: 60px;
-        height: 60px;
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fotoEquipe {
+        position: relative;
+        width: 90%;
+        height: 10%;
+        margin-top: 5%;
+        margin-left: auto;
+    }
+
+    #home{
+        z-index: 1;
+        position: absolute;
+        border: solid 1px #fff;
+        width: 9.2%;
+        height: 100%;
+        background-color: transparent;
+        left: 45px;
+        top: 0px;
     }
 }
