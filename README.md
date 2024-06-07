@@ -27,6 +27,6 @@ Você deve realizar um fork deste repositório para sua conta pessoal no GitHub.
 - O candidato não deve excluir o repositório e nem a release após a entrega, pois a utilização do GitHub será avaliada.
 - Data de entrega 09/06/2025
 
-## Funcionalidade Adicional
+## 📌Funcionalidade Adicional criada por mim 📌
 
 - Quando o usuário clica na logo da EngNet, ele será redirecionado para a tela principal do site.
