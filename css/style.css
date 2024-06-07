@@ -13,7 +13,7 @@ header {
     position: relative;
 }
 
-#home{
+#home {
     z-index: 1;
     position: absolute;
     border: solid 1px #fff;
@@ -52,16 +52,18 @@ nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
-nav p {
-    margin-top: 10px;
-    margin-left: 100px;
+nav div a {
+    text-decoration: none;
+    position: absolute;
+    color: #FFFFFF;
+    margin-left: 200px;
 }
 
 #envelopeLogo {
-    margin-left: 50px;
+    margin-left: 150px;
     margin-top: -10px;
 }
 
@@ -75,7 +77,7 @@ nav span {
     width: 75px;
     height: 75px;
     top: 5px;
-    left: 40px;
+    left: 45px;
     object-fit: cover;
     object-position: left;
     position: absolute;
@@ -110,8 +112,6 @@ main h1 {
 
 main p {
     font-size: 18px;
-    padding: 0px 9px 0px 10px;
-
 }
 
 .fotoEquipe {
@@ -136,19 +136,17 @@ main p {
     }
 
     nav {
-        font-size: 30px;
+        padding: 15px;
+        font-size: 28px;
     }
 
     nav ul {
         display: grid;
         margin-left: 10%;
-        gap: 6%;
     }
 
-    nav p {
-        margin-bottom: 8%;
-        margin-left: 01%;
-        margin-top: -3%;
+    nav div a {
+        margin-left: 1%;
     }
 
     nav button {
@@ -157,20 +155,18 @@ main p {
         width: 280px;
     }
 
-    nav img {
-        position: absolute;
-        left: 80%;
-        top: 85%;
+    #envelopeLogo {
+        margin-left: 500%;
     }
 
     .logoEngnet {
-        top: 20%;
+        top: 40%;
         left: 05%;
     }
 
     aside {
         width: 8%;
-        height: 90%;
+        height: 100%;
     }
 
     main {
@@ -184,7 +180,7 @@ main p {
     }
 
     main p {
-        font-size: 30px;    
+        font-size: 30px;
     }
 
     .fotoEquipe {
@@ -201,7 +197,7 @@ main p {
         height: 50px;
     }
 
-    #home{
+    #home {
         z-index: 1;
         position: absolute;
         border: solid 1px #fff;
@@ -224,18 +220,17 @@ main p {
         gap: 20px;
     }
 
-    nav p {
-        margin-left: 10px;
+    nav div a {
+        margin-left: 1px;
     }
 
-    nav img {
-        top: 70%;
-        margin-left: 0%;
+    #envelopeLogo {
+        margin-left: 500%;
     }
 
     aside {
         width: 8%;
-        height: 150%;
+        height: 100%;
     }
 
     .fotoEquipe {
@@ -246,7 +241,7 @@ main p {
         margin-left: auto;
     }
 
-    #home{
+    #home {
         z-index: 1;
         position: absolute;
         border: solid 1px #fff;
@@ -266,13 +261,12 @@ main p {
     .boxMenuLateral {
         margin-top: 1200%;
     }
-
 }
 
 @media (max-width: 480px) {
     .boxmenu {
         width: 90%;
-        height: 100%;
+        height: 450px;
     }
 
     nav ul {
@@ -286,20 +280,22 @@ main p {
         margin-bottom: 2%;
     }
 
-    nav img {
-        position: absolute;
-        top: 82%;
-        left: 50%;
+    nav div a {
+        margin-left: 1%;
     }
 
-    nav button{
+    #envelopeLogo {
+        margin-left: 570%;
+    }
+
+    nav button {
         width: 390px;
     }
 
     aside {
         width: 8%;
-        height: 100%;
         margin-left: 43px;
+        height: 100%;
     }
 
     .boxMenuLateral {
@@ -328,7 +324,7 @@ main p {
         margin-left: auto;
     }
 
-    #home{
+    #home {
         z-index: 1;
         position: absolute;
         border: solid 1px #fff;

@@ -1,13 +1,12 @@
 main {
-    height: 90%;
-    width: 80%; 
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     margin-top: 0px;
 }
 
 main div {
-    width: calc(25%); 
+    width: calc(25%);
     text-align: center;
     color: #000;
     background-color: white;
@@ -16,17 +15,110 @@ main div {
     padding: 20px;
 }
 
+article {
+    margin-top: 8px;
+    padding: 5px;
+}
+
 article h2 {
-    margin-top: 10px;
-    font-size: 10px;
+    margin-top: 0px;
+    font-size: 18px;
 }
 
 article p {
     font-size: 12px;
 }
 
-main div img{
-    margin-top: 40px;
-    width: 55px;
-    height: 55px;
+main div img {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    main {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    main div {
+        width: calc(40%);
+        text-align: center;
+        color: #000;
+        background-color: white;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    aside {
+        height: 100%;
+    }
+
+    article h2 {
+        font-size: 30px;
+    }
+
+    article p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    main div {
+        width: calc(20%);
+        text-align: center;
+        color: #000;
+        background-color: white;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    aside {
+        height: 100%;
+    }
+
+    article h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    main div {
+        width: calc(20%);
+        text-align: center;
+        color: #000;
+        background-color: white;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    aside {
+        height: 100%;
+    }
+
+    article h2 {
+        font-size: 30px;
+    }
 }
